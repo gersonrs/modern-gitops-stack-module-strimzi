@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.4.0](https://github.com/GersonRS/modern-gitops-stack-module-strimzi/compare/v1.3.0...v1.4.0) (2025-01-18)
+
+
+### 🚀 New Features
+
+* update chart and update project ([e02c134](https://github.com/GersonRS/modern-gitops-stack-module-strimzi/commit/e02c13409027134cf7000b26316fa214f0c86b38))
+* update chart and update project ([9006bc1](https://github.com/GersonRS/modern-gitops-stack-module-strimzi/commit/9006bc1853bdc32bcd679ebfa0ee8186a1bbc081))
+
+
+### 📚 Documentation
+
+* **terraform-docs:** generate docs and write to README.adoc ([2e8e747](https://github.com/GersonRS/modern-gitops-stack-module-strimzi/commit/2e8e7477e27c028dd8afe3102777a49057420699))
+
 ## [1.3.0](https://github.com/GersonRS/modern-gitops-stack-module-strimzi/compare/v1.2.0...v1.3.0) (2024-08-19)
 
 
