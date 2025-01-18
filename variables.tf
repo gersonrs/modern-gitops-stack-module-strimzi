@@ -95,7 +95,7 @@ variable "resources" {
   EOT
   type = object({
 
-    controller = optional(object({
+    general = optional(object({
       requests = optional(object({
         cpu    = optional(string, "50m")
         memory = optional(string, "128Mi")
