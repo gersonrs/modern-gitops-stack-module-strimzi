@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.2](https://github.com/GersonRS/modern-gitops-stack-module-strimzi/compare/v1.4.1...v1.4.2) (2025-01-18)
+
+
+### 🧪 Automated Testing
+
+* adjust resources ([664fb7c](https://github.com/GersonRS/modern-gitops-stack-module-strimzi/commit/664fb7cbea30cc4c861adcc32ea62b1a3ac553e6))
+
 ## [1.4.1](https://github.com/GersonRS/modern-gitops-stack-module-strimzi/compare/v1.4.0...v1.4.1) (2025-01-18)
 
 
