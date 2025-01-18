@@ -5,4 +5,4 @@ version: "0"
 dependencies:
   - name: strimzi-kafka-operator
     repository: oci://quay.io/strimzi-helm
-    version: "*.*.*"
+    version: "0.45.0"
