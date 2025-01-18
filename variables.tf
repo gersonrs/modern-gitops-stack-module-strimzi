@@ -97,12 +97,12 @@ variable "resources" {
 
     general = optional(object({
       requests = optional(object({
-        cpu    = optional(string, "50m")
-        memory = optional(string, "128Mi")
+        cpu    = optional(string, "200m")
+        memory = optional(string, "384Mi")
       }), {})
       limits = optional(object({
         cpu    = optional(string)
-        memory = optional(string, "128Mi")
+        memory = optional(string, "500Mi")
       }), {})
     }), {})
 
