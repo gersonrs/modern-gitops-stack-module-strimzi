@@ -17,13 +17,11 @@ The following requirements are needed by this module:
 
 The following providers are used by this module:
 
-- [[provider_null]] <<provider_null,null>> (>= 3)
-
-- [[provider_random]] <<provider_random,random>> (>= 3)
+- [[provider_utils]] <<provider_utils,utils>> (>= 1)
 
 - [[provider_argocd]] <<provider_argocd,argocd>> (>= 6)
 
-- [[provider_utils]] <<provider_utils,utils>> (>= 1)
+- [[provider_null]] <<provider_null,null>> (>= 3)
 
 === Resources
 
@@ -33,7 +31,6 @@ The following resources are used by this module:
 - https://registry.terraform.io/providers/argoproj-labs/argocd/latest/docs/resources/project[argocd_project.this] (resource)
 - https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource[null_resource.dependencies] (resource)
 - https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource[null_resource.this] (resource)
-- https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/password[random_password.strimzi_root_secretkey] (resource)
 - https://registry.terraform.io/providers/cloudposse/utils/latest/docs/data-sources/deep_merge_yaml[utils_deep_merge_yaml.values] (data source)
 
 === Required Inputs
@@ -173,12 +170,12 @@ object({
 
     general = optional(object({
       requests = optional(object({
-        cpu    = optional(string, "50m")
-        memory = optional(string, "128Mi")
+        cpu    = optional(string, "200m")
+        memory = optional(string, "384Mi")
       }), {})
       limits = optional(object({
         cpu    = optional(string)
-        memory = optional(string, "128Mi")
+        memory = optional(string, "500Mi")
       }), {})
     }), {})
 
@@ -218,9 +215,8 @@ Description: ID to pass other modules in order to refer to this module as a depe
 [cols="a,a",options="header,autowidth"]
 |===
 |Name |Version
-|[[provider_random]] <<provider_random,random>> |>= 3
-|[[provider_utils]] <<provider_utils,utils>> |>= 1
 |[[provider_argocd]] <<provider_argocd,argocd>> |>= 6
+|[[provider_utils]] <<provider_utils,utils>> |>= 1
 |[[provider_null]] <<provider_null,null>> |>= 3
 |===
 
@@ -233,7 +229,6 @@ Description: ID to pass other modules in order to refer to this module as a depe
 |https://registry.terraform.io/providers/argoproj-labs/argocd/latest/docs/resources/project[argocd_project.this] |resource
 |https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource[null_resource.dependencies] |resource
 |https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource[null_resource.this] |resource
-|https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/password[random_password.strimzi_root_secretkey] |resource
 |https://registry.terraform.io/providers/cloudposse/utils/latest/docs/data-sources/deep_merge_yaml[utils_deep_merge_yaml.values] |data source
 |===
 
@@ -353,12 +348,12 @@ object({
 
     general = optional(object({
       requests = optional(object({
-        cpu    = optional(string, "50m")
-        memory = optional(string, "128Mi")
+        cpu    = optional(string, "200m")
+        memory = optional(string, "384Mi")
       }), {})
       limits = optional(object({
         cpu    = optional(string)
-        memory = optional(string, "128Mi")
+        memory = optional(string, "500Mi")
       }), {})
     }), {})
 
