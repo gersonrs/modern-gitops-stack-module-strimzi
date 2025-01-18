@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/GersonRS/modern-gitops-stack-module-strimzi/compare/v1.4.0...v1.4.1) (2025-01-18)
+
+
+### 🔥 Bug Fixes
+
+* fix var name ([94ca501](https://github.com/GersonRS/modern-gitops-stack-module-strimzi/commit/94ca5012799edc8ee0233fda1e371881c076ae93))
+
 ## [1.4.0](https://github.com/GersonRS/modern-gitops-stack-module-strimzi/compare/v1.3.0...v1.4.0) (2025-01-18)
 
 
