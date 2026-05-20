@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.5.0](https://github.com/gersonrs/modern-gitops-stack-module-strimzi/compare/v1.4.3...v1.5.0) (2026-05-20)
+
+
+### 🚀 New Features
+
+* add gateway_name and gateway_namespace variables for Istio compatibility ([#16](https://github.com/gersonrs/modern-gitops-stack-module-strimzi/issues/16)) ([69fab90](https://github.com/gersonrs/modern-gitops-stack-module-strimzi/commit/69fab90c7fb965b17935ae8c350c4d48ae5b5ee5))
+
+
+### 🔥 Bug Fixes
+
+* update release-please workflow to use PROJECT_APP_PRIVATE_KEY secret ([#15](https://github.com/gersonrs/modern-gitops-stack-module-strimzi/issues/15)) ([4cbce7a](https://github.com/gersonrs/modern-gitops-stack-module-strimzi/commit/4cbce7a03d9a0f3d6c45c66be8e75590355335a4))
+* upgrade strimzi-kafka-operator to 0.47.0 for Kubernetes v1.35 compatibility ([#17](https://github.com/gersonrs/modern-gitops-stack-module-strimzi/issues/17)) ([6afbbf4](https://github.com/gersonrs/modern-gitops-stack-module-strimzi/commit/6afbbf4bdb23f80a91866a519721edd36e0d0b21))
+
 ## [1.4.3](https://github.com/GersonRS/modern-gitops-stack-module-strimzi/compare/v1.4.2...v1.4.3) (2025-02-08)
 
 
