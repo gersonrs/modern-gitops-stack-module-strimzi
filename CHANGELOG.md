@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/gersonrs/modern-gitops-stack-module-strimzi/compare/v1.5.0...v1.6.0) (2026-07-11)
+
+
+### 🚀 New Features
+
+* add namespace_labels variable to all modules ([cc3ae82](https://github.com/gersonrs/modern-gitops-stack-module-strimzi/commit/cc3ae82d3d632a107f5f3d3c3a4cdad4b910df43))
+
 ## [1.5.0](https://github.com/gersonrs/modern-gitops-stack-module-strimzi/compare/v1.4.3...v1.5.0) (2026-05-20)
 
 
