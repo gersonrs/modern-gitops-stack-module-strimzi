@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/gersonrs/modern-gitops-stack-module-strimzi/compare/v1.6.0...v2.0.0) (2026-11-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* provider major bumps and a stricter Terraform baseline; consumers must run `terraform init -upgrade`.
+
+### 🚀 New Features
+
+* upgrade charts, providers and Terraform baseline ([#21](https://github.com/gersonrs/modern-gitops-stack-module-strimzi/issues/21)) ([6f5fec9](https://github.com/gersonrs/modern-gitops-stack-module-strimzi/commit/6f5fec962687a69ba889090e08d7640bf06b70b6))
+
 ## [1.6.0](https://github.com/gersonrs/modern-gitops-stack-module-strimzi/compare/v1.5.0...v1.6.0) (2026-07-11)
 
 
