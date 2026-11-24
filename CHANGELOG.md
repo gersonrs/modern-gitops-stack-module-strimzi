@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/gersonrs/modern-gitops-stack-module-strimzi/compare/v2.0.0...v2.0.1) (2026-11-24)
+
+
+### 📚 Documentation
+
+* add usage and dependencies to the module documentation ([#23](https://github.com/gersonrs/modern-gitops-stack-module-strimzi/issues/23)) ([4e18d19](https://github.com/gersonrs/modern-gitops-stack-module-strimzi/commit/4e18d19b3bb184bbe0f347aaf286ab6d1cb07045))
+
 ## [2.0.0](https://github.com/gersonrs/modern-gitops-stack-module-strimzi/compare/v1.6.0...v2.0.0) (2026-11-20)
 
 
