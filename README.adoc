@@ -1,4 +1,48 @@
 = modern-gitops-stack-module-strimzi
+// Document attributes to replace along the document
+:strimzi-kafka-operator-chart-version: 1.3.1
+:original-repo-url: https://github.com/strimzi/strimzi-kafka-operator
+
+A https://modern-gitops-stack.io[Modern GitOps Stack] module to deploy the Strimzi Kafka operator, which manages Kafka clusters through custom resources.
+
+The strimzi-kafka-operator chart used by this module is shipped in this repository as well, in order to avoid any unwanted behaviors caused by unsupported versions.
+
+[cols="1,1,1",options="autowidth,header"]
+|===
+|Current Chart Version |Original Repository |Default Values
+|*1.3.1* |https://github.com/strimzi/strimzi-kafka-operator/tree/main/helm-charts/helm3/strimzi-kafka-operator[strimzi-kafka-operator] |https://artifacthub.io/packages/helm/strimzi-kafka-operator/strimzi-kafka-operator/1.3.1?modal=values[`values.yaml`]
+|===
+
+== Usage
+
+This module can be declared by adding the following block to your Terraform configuration:
+
+[source,terraform]
+----
+module "strimzi" {
+  source = "git::https://github.com/GersonRS/modern-gitops-stack-module-strimzi.git?ref=<RELEASE>"
+
+  cluster_name   = local.cluster_name
+  base_domain    = local.base_domain
+  subdomain      = local.subdomain
+  cluster_issuer = local.cluster_issuer
+  app_autosync   = local.app_autosync
+
+  dependency_ids = {
+    argocd = module.argocd.id
+  }
+}
+----
+
+The application is deployed to the `ingestion` namespace.
+
+== Technical Reference
+
+=== Dependencies
+
+==== `module.argocd.id`
+
+Argo CD applies the operator.
 
 // BEGIN_TF_DOCS
 === Requirements
